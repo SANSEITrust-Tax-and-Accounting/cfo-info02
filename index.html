@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【図解】なぜ、あなたの顧問先は成長しないのか？</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #F8F9FA;
+            color: #343A40;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #1A237E 0%, #303F9F 100%);
+        }
+        .icon-card {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .icon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
+        }
+        .accent-gold {
+            color: #FFC107;
+        }
+        .accent-bg-gold {
+            background-color: #FFC107;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.25rem;
+            line-height: 1.4;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: #6C757D;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+        }
+        .step-line {
+            position: relative;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+        }
+        .step-line::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            bottom: 0;
+            width: 2px;
+            background-color: #E0E0E0;
+        }
+        .step-line::after {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #1A237E;
+            border: 2px solid white;
+            box-shadow: 0 0 0 3px #1A237E;
+        }
+        .before-after-card {
+            border: 1px solid #E0E0E0;
+            border-radius: 1rem;
+            overflow: hidden;
+        }
+        .before-header {
+            background-color: #6C757D;
+            color: white;
+            padding: 0.75rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        .after-header {
+            background-color: #1A237E;
+            color: white;
+            padding: 0.75rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        .final-cta {
+            background: linear-gradient(135deg, #FFC107 0%, #FF9800 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ヒーローセクション -->
+    <header class="hero-bg text-white text-center py-20 px-4">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-black mb-4 fade-in">なぜ、あなたの顧問先は<br class="md:hidden">成長しないのか？</h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8 fade-in" style="transition-delay: 200ms;">その答えは、税理士の「役割」そのものにあるのかもしれません。</p>
+            <div class="fade-in" style="transition-delay: 400ms;">
+                <svg class="w-8 h-8 mx-auto animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                <p class="text-sm">スクロールして読み進める</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-16 md:py-24">
+        <!-- セクション1: 2つの世界 -->
+        <section class="container mx-auto px-4 mb-24 md:mb-32">
+            <h2 class="section-title fade-in">あなたは、どちらの専門家？</h2>
+            <p class="section-subtitle fade-in">従来の税理士と、未来を創るCFO。その役割は根本的に異なります。</p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- 過去を見る税理士 -->
+                <div class="icon-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-12 h-12 text-gray-400 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                        </svg>
+                        <div>
+                            <h3 class="text-2xl font-bold">過去を見る税理士</h3>
+                            <p class="text-gray-500">Traditional Accountant</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-start"><span class="accent-gold mr-2 mt-1">●</span>過去の数字の整理・報告</li>
+                        <li class="flex items-start"><span class="accent-gold mr-2 mt-1">●</span>節税対策の提案</li>
+                        <li class="flex items-start"><span class="accent-gold mr-2 mt-1">●</span>法的義務の代行</li>
+                        <li class="flex items-start"><span class="accent-gold mr-2 mt-1">●</span>役割：<strong class="text-red-600">記録者・監視者</strong></li>
+                    </ul>
+                </div>
+                <!-- 未来を創るCFO -->
+                <div class="icon-card fade-in" style="transition-delay: 200ms;">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-12 h-12 text-blue-800 mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+                        </svg>
+                        <div>
+                            <h3 class="text-2xl font-bold">未来を創るCFO</h3>
+                            <p class="text-gray-500">Strategic CFO</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-start"><span class="accent-gold mr-2 mt-1">●</span>未来の成長戦略を立案</li>
+                        <li class="flex items-start"><span class="accent-gold mr-2 mt-1">●</span>事業価値の創造</li>
+                        <li class="flex items-start"><span class="accent-gold mr-2 mt-1">●</span>経営者の意識変革を促す</li>
+                        <li class="flex items-start"><span class="accent-gold mr-2 mt-1">●</span>役割：<strong class="text-blue-800">戦略パートナー</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- セクション2: 成長が止まる本当の理由 -->
+        <section class="bg-white py-24 md:py-32">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title fade-in">成長が止まる、本当の理由。</h2>
+                <p class="section-subtitle fade-in">問題は「資金力」や「市場」ではありません。<br>経営者自身の「視点」と「動機」に隠されています。</p>
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="fade-in p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-6">多くの経営者の視点は、内側を向いている</h3>
+                        <div class="relative flex flex-col items-center justify-center space-y-4">
+                            <div class="fade-in w-48 h-48 rounded-full bg-gray-200 flex items-center justify-center text-center p-4 shadow-inner">
+                                <p class="font-bold text-gray-700">自分と家族の<br>ニーズ</p>
+                            </div>
+                            <svg class="w-8 h-8 text-gray-400 fade-in" style="transition-delay: 200ms;" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3"></path></svg>
+                            <div class="fade-in w-64 h-64 rounded-full bg-blue-100 flex items-center justify-center text-center p-4 shadow-inner" style="transition-delay: 400ms;">
+                                <p class="font-bold text-blue-800">自社の利益</p>
+                            </div>
+                        </div>
+                        <p class="mt-8 text-lg text-gray-600 max-w-2xl mx-auto fade-in" style="transition-delay: 600ms;">
+                            この「内向きの視点」が、成長の限界を生み出します。<br>「食べていければいい」「リスクは取りたくない」という思考に陥ってしまうのです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- セクション3: 米国式CFOの魔法 -->
+        <section class="container mx-auto px-4 py-24 md:py-32">
+            <h2 class="section-title fade-in">米国式CFOが起こす<br class="md:hidden">「意識の変革」</h2>
+            <p class="section-subtitle fade-in">それは魔法ではありません。経営者の視点をズラし、動機を再設定する、具体的な3つのステップです。</p>
+            <div class="max-w-2xl mx-auto">
+                <!-- Step 1 -->
+                <div class="step-line fade-in">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">STEP 1: 視点の転換</h3>
+                    <p class="text-lg">「自分のため」から「誰かのため」へ。<br>イーロン・マスクが「人類の困りごとは何か？」から事業を考えたように、視点を会社の外に向けさせます。</p>
+                    <div class="mt-4 flex items-center justify-center bg-gray-100 p-4 rounded-lg">
+                        <span class="font-bold text-red-600">自分のニーズ</span>
+                        <svg class="w-12 h-12 mx-4 text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
+                        <span class="font-bold text-blue-800">社会・顧客の課題</span>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="step-line fade-in">
+                    <h3 class="text-xl font-bold text-blue-800 mb-2">STEP 2: 動機の再設定</h3>
+                    <p class="text-lg">「何をしなければならないか(Must)」ではなく、「どれだけ多くの人を助けられるか(Mission)」を新たな原動力にします。</p>
+                     <div class="mt-4 flex items-center justify-center bg-gray-100 p-4 rounded-lg">
+                        <span class="font-bold text-red-600">義務感</span>
+                        <svg class="w-12 h-12 mx-4 text-blue-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" /></svg>
+                        <span class="font-bold text-blue-800">使命感</span>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="step-line fade-in" style="padding-bottom: 0; border: none;">
+                     <h3 class="text-xl font-bold text-blue-800 mb-2">STEP 3: お金の再定義</h3>
+                    <p class="text-lg">お金を目的ではなく、「価値提供の結果」として捉え直させます。</p>
+                    <div class="mt-4 space-y-2 bg-gray-100 p-4 rounded-lg">
+                        <p><strong>売上</strong> ＝ どれだけ多くの<strong class="text-blue-800">感謝</strong>を集めたかの指標</p>
+                        <p><strong>利益</strong> ＝ どれだけ<strong class="text-blue-800">効率よく</strong>問題を解決できたかの証明</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- セクション4: Before / After ストーリー -->
+        <section class="bg-white py-24 md:py-32">
+            <div class="container mx-auto px-4">
+                <h2 class="section-title fade-in">経営者が変わると、会社はこう変わる。</h2>
+                <p class="section-subtitle fade-in">これは、実際に起きた変革の物語です。</p>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                    <!-- Before -->
+                    <div class="before-after-card fade-in">
+                        <div class="before-header">BEFORE</div>
+                        <div class="p-8 text-center">
+                            <img src="https://placehold.co/150x150/6C757D/FFFFFF?text=..." alt="悩む経営者" class="mx-auto rounded-full mb-4">
+                            <h3 class="text-xl font-bold mb-2">現状維持が目標の社長</h3>
+                            <p class="text-gray-600">「売上は横ばい。リスクは取りたくない。今のままで十分だ…」</p>
+                            <div class="mt-4 text-left space-y-2">
+                                <p>❌ 成長意欲の低下</p>
+                                <p>❌ スタッフの士気も低い</p>
+                                <p>❌ 新しい挑戦を避ける</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- After -->
+                    <div class="before-after-card fade-in" style="transition-delay: 200ms;">
+                        <div class="after-header">AFTER</div>
+                        <div class="p-8 text-center">
+                            <img src="https://placehold.co/150x150/1A237E/FFFFFF?text=!" alt="自信に満ちた経営者" class="mx-auto rounded-full mb-4">
+                            <h3 class="text-xl font-bold mb-2">地域の未来を担うリーダーへ</h3>
+                            <p class="text-gray-600">「この地域の課題は、俺が解決する！そのための事業をやるぞ！」</p>
+                            <div class="mt-4 text-left space-y-2">
+                                <p class="text-green-600 font-bold">✅ 年商2倍を達成</p>
+                                <p class="text-green-600 font-bold">✅ スタッフが自発的に動き出す</p>
+                                <p class="text-green-600 font-bold">✅ 社会貢献で利益率も向上</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <p class="text-center mt-12 text-xl font-bold text-blue-800 fade-in">
+                    数字だけを追っていては、この変化は絶対に起こせません。
+                </p>
+            </div>
+        </section>
+
+        <!-- セクション5: 「無理」を「可能」に -->
+        <section class="container mx-auto px-4 py-24 md:py-32 text-center">
+            <h2 class="text-4xl md:text-5xl font-black mb-6 fade-in">
+                <span class="relative inline-block">
+                    <span class="text-red-500 line-through">「税理士にCFOは無理」</span>
+                </span>
+            </h2>
+            <p class="text-2xl md:text-3xl font-bold text-blue-800 mb-8 fade-in" style="transition-delay: 200ms;">
+                …は、思い込みです。
+            </p>
+            <p class="text-lg max-w-3xl mx-auto text-gray-700 fade-in" style="transition-delay: 400ms;">
+                「無理」なのではなく、ただ「やり方を知らない」だけ。<br>
+                経営者の本質に変革を起こし、顧問先を3段飛びで成長させるための<strong class="text-blue-800">具体的なノウハウ、トークスクリプト、そしてマーケティング手法</strong>が存在します。<br><br>
+                従来の延長線上で考えるから難しく感じるのです。全く新しいOSをインストールするように、新しい役割を始めればいいのです。
+            </p>
+        </section>
+
+        <!-- 最終セクション・CTA -->
+        <section class="final-cta text-white">
+            <div class="container mx-auto px-4 py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-black mb-4 fade-in">あなたは5年後、どちらの未来を選びますか？</h2>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 my-12">
+                    <div class="bg-white/20 p-6 rounded-lg fade-in">
+                        <h3 class="text-xl font-bold mb-2">A: 従来型の事務所</h3>
+                        <p>価格競争に巻き込まれ、AIに代替される恐怖に怯え、売上は頭打ちのまま…。</p>
+                    </div>
+                    <div class="bg-white/20 p-6 rounded-lg fade-in" style="transition-delay: 200ms;">
+                        <h3 class="text-xl font-bold mb-2">B: 米国CFO型の事務所</h3>
+                        <p>地域経済のエンジンとして感謝され、高収益を実現。使命感に溢れる毎日。</p>
+                    </div>
+                </div>
+                <p class="text-xl max-w-3xl mx-auto mb-8 fade-in" style="transition-delay: 400ms;">
+                    この図解で解説した「米国式CFO」への変革を、<strong class="accent-bg-gold text-blue-900 px-2 py-1 rounded">リスクゼロ</strong>であなたの事務所に完全導入するプロジェクトが始まっています。
+                </p>
+                <a href="https://sanseitrust-tax-and-accounting.github.io/cfo-info/" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-blue-800 font-bold text-lg px-12 py-4 rounded-full shadow-lg hover:bg-gray-100 transition-transform transform hover:scale-105 fade-in" style="transition-delay: 600ms;">
+                    プロジェクトの詳細を見る
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>三聖トラスト会計事務所作成</p>
+            <a href="https://www.sansei-tokyo.co.jp/" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white underline">三聖トラスト会計事務所 公式サイト</a>
+        </div>
+    </footer>
+
+    <script>
+        // スクロールに応じたフェードインエフェクト
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = {
+            threshold: 0.2,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+</html>
